@@ -32,7 +32,9 @@ input {
   margin-left: 25%;
   box-shadow: none;
   border: 2px solid dimgray;
+  color: darkgray;
   text-align: center;
+  font-family: inherit;
 }
 
 input:focus {
