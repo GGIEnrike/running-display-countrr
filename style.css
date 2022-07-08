@@ -31,8 +31,8 @@ input {
   font-size: 1.2rem;
   margin-left: 25%;
   box-shadow: none;
-  border: 1px solid black;
-  margin-top: 0;
+  border: 2px solid dimgray;
+  text-align: center;
 }
 
 input:focus {
@@ -41,6 +41,7 @@ input:focus {
 
 h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 #total {
