@@ -31,7 +31,7 @@ input {
   font-size: 1.2rem;
   margin-left: 25%;
   box-shadow: none;
-  border: 2px solid dimgray;
+  border: 2px solid lightgray;
   color: dimgray;
   text-align: center;
   font-family: inherit;
@@ -39,6 +39,7 @@ input {
 
 input:focus {
   outline: none;
+  border-color: dimgray;
 }
 
 h1 {
