@@ -2,7 +2,7 @@
 import './style.css';
 
 // Write Typescript code!
-const input = document.getElementById("input")
+const input = <HTMLInputElement>document.getElementById("input")
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     input.blur()
