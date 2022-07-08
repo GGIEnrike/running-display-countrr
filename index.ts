@@ -14,7 +14,8 @@ const input = <HTMLInputElement>document.getElementById("input")
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     input.blur()
-    if (+input.value === NaN) {
+    if (!(!isNaN(input.value) && !isNaN(parseFloat(input.value)))) {
+      console.log("NaN")
       return
     }
     total += +input.value
