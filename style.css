@@ -10,6 +10,11 @@ body {
   font-family: 'Albert Sans', sans-serif;
 }
 
+input {
+  width: 50%;
+  margin-left: 25%;
+}
+
 h1 {
   font-size: 4rem;
 }
@@ -28,4 +33,26 @@ h1 {
 
 #units {
   color: lightgray;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+
+  #total {
+    color: gainsboro;
+  }
+  
+  #slash {
+    color: gainsboro;
+  }
+  
+  #goal {
+    color: whitesmoke;
+  }
+  
+  #units {
+    color: silver;
+  }
 }
