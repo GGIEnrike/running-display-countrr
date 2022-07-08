@@ -17,8 +17,7 @@ h1 {
 }
 
 h1 > div {
-  flex: 0 0 100%;
-  outline: red solid;
+  flex: 0 0 80%;
 }
 
 #numbers {
