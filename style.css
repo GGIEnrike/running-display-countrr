@@ -27,7 +27,15 @@ h1 > div {
 
 input {
   width: 50%;
+  height: 1.5rem;
+  font-size: 1.2rem;
   margin-left: 25%;
+  box-shadow: none;
+  border: 1px solid black;
+}
+
+input:focus {
+  outline: none;
 }
 
 h1 {
