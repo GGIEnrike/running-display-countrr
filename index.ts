@@ -3,43 +3,43 @@ import './style.css';
 
 // TODO -- localStorage
 
-if (localStorage.getItem("total") === null) {
-  localStorage.setItem("total", 0)
+if (localStorage.getItem('total') === null) {
+  localStorage.setItem('total', '0.00');
 }
 
-let total: number = parseFloat(localStorage.getItem("total"))
-let goal = 100
+let total: number = parseFloat(localStorage.getItem('total'));
+let goal = 100;
 
-const totalEl = document.getElementById("total")
-const goalEl = document.getElementById("goal")
+const totalEl = document.getElementById('total');
+const goalEl = document.getElementById('goal');
 
-totalEl.innerText = total.toString()
-goalEl.innerText = goal.toString()
+totalEl.innerText = total.toString();
+goalEl.innerText = goal.toString();
 
-const input = <HTMLInputElement>document.getElementById("input")
+const input = <HTMLInputElement>document.getElementById('input');
 function add_total() {
-  input.blur()
+  input.blur();
   if (!(!isNaN(input.value) && !isNaN(parseFloat(input.value)))) {
-    return
+    return;
   }
-  total += +input.value
-  localStorage.setItem("total", total.toFixed(2))
-  input.value = ""
-  totalEl.innerText = localStorage.getItem("total")
+  total += +input.value;
+  localStorage.setItem('total', total.toFixed(2));
+  input.value = '';
+  totalEl.innerText = localStorage.getItem('total');
 }
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    add_total()
+input.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    add_total();
   }
 });
 
-const add = <HTMLButtonElement>document.getElementById("add")
-const reset = <HTMLButtonElement>document.getElementById("reset")
+const add = <HTMLButtonElement>document.getElementById('add');
+const reset = <HTMLButtonElement>document.getElementById('reset');
 
-add.addEventListener("click", add_total)
+add.addEventListener('click', add_total);
 
-reset.addEventListener("click", () => {
-  total = 0
-  localStorage.setItem("total", "0.00")
-  totalEl.innerText = "0.00"
-})
+reset.addEventListener('click', () => {
+  total = 0;
+  localStorage.setItem('total', '0.00');
+  totalEl.innerText = '0.00';
+});
