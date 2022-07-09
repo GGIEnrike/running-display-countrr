@@ -4,7 +4,7 @@ import './style.css';
 // TODO -- localStorage
 
 if (localStorage.getItem("total") === null) {
-  localStorage.setItem("total", 31.45)
+  localStorage.setItem("total", 0)
 }
 
 let total: number = parseFloat(localStorage.getItem("total"))
@@ -23,9 +23,9 @@ function add_total() {
     return
   }
   total += +input.value
-  localStorage.setItem("total", total.toString())
+  localStorage.setItem("total", total.toFixed(2))
   input.value = ""
-  totalEl.innerText = total.toString()
+  totalEl.innerText = localStorage.getItem("total")
 }
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
