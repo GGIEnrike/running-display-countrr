@@ -106,4 +106,10 @@ button {
   #units {
     color: silver;
   }
+
+  input {
+    background: black;
+    border-color: silver;
+    color: whitesmoke;
+  }
 }
