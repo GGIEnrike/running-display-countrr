@@ -3,7 +3,11 @@ import './style.css';
 
 // TODO -- localStorage
 
-let total = 31.45
+if (localStorage.getItem("total") === null) {
+  localStorage.setItem("total", 31.45)
+}
+
+let total: number = parseFloat(localStorage.getItem("total"))
 let goal = 100
 
 const totalEl = document.getElementById("total")
@@ -19,6 +23,7 @@ function add_total() {
     return
   }
   total += +input.value
+  localStorage.setItem("total", total.toString())
   input.value = ""
   totalEl.innerText = total.toString()
 }
@@ -35,5 +40,6 @@ add.addEventListener("click", add_total)
 
 reset.addEventListener("click", () => {
   total = 0
+  localStorage.setItem("total", "0")
   totalEl.innerText = "0"
 })
