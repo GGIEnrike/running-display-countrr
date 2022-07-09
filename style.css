@@ -72,13 +72,12 @@ h1 {
 
 button {
   margin-top: 2rem;
-}
 
-button {
   width: 25%;
   height: 2.3rem;
   background: lightgray;
   color: darkgray;
+  border: 2px solid lightgray;
   border-radius: .4rem;
 
   font-size: 1rem;
@@ -114,5 +113,10 @@ button {
 
   input:focus {
     border-color: whitesmoke;
+  }
+
+  button {
+    background: silver;
+    color: dimgray;
   }
 }
