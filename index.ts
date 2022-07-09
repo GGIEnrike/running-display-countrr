@@ -1,6 +1,8 @@
 // Import stylesheets
 import './style.css';
 
+// TODO -- localStorage
+
 let total = 31.45
 let goal = 100
 
