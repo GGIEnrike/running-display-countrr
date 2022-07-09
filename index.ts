@@ -11,6 +11,9 @@ totalEl.innerText = total.toString()
 goalEl.innerText = goal.toString()
 
 const input = <HTMLInputElement>document.getElementById("input")
+function add_total(n: number) {
+  
+}
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     input.blur()
@@ -22,3 +25,11 @@ input.addEventListener("keydown", (e) => {
     totalEl.innerText = total.toString()
   }
 });
+
+const add = <HTMLButtonElement>document.getElementById("add")
+const reset = <HTMLButtonElement>document.getElementById("reset")
+
+reset.addEventListener("click", () => {
+  total = 0
+  totalEl.innerText = "0"
+})
