@@ -79,7 +79,6 @@ button {
   height: 2.3rem;
   background: lightgray;
   color: darkgray;
-  border: 2px solid lightgray;
   border-radius: .4rem;
 
   font-size: 1rem;
@@ -111,5 +110,9 @@ button {
     background: black;
     border-color: silver;
     color: whitesmoke;
+  }
+
+  input:focus {
+    border-color: whitesmoke;
   }
 }
