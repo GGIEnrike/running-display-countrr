@@ -17,7 +17,7 @@ h1 {
 }
 
 h1 > div {
-  flex: 0 0 80%;
+  flex: 0 0 90%;
 }
 
 #numbers {
