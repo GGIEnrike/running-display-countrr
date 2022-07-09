@@ -40,6 +40,6 @@ add.addEventListener("click", add_total)
 
 reset.addEventListener("click", () => {
   total = 0
-  localStorage.setItem("total", "0")
-  totalEl.innerText = "0"
+  localStorage.setItem("total", "0.00")
+  totalEl.innerText = "0.00"
 })
