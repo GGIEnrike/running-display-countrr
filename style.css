@@ -70,10 +70,15 @@ h1 {
   color: lightgray;
 }
 
-button {
+#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
   margin-top: 2rem;
+}
 
-  width: 25%;
+button {
   height: 2.3rem;
   background: lightgray;
   color: darkgray;
