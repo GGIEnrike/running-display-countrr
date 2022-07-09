@@ -11,6 +11,7 @@ body {
 }
 
 #app {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +19,7 @@ body {
 }
 
 .spacer {
-  flex: 0 0 80%;
+  flex: 0 0 100%;
 }
 
 h1 {
